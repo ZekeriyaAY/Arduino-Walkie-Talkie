@@ -282,6 +282,6 @@ Sonuçtan büyük ölçekte memnunum. Birkaç tecrübe edindim.
 
 ### 💓 Bu Repoya Yıldız, Youtube Videoma Yorumunu Bırakarak Bana Destek Olabilirsin
 
-[](https://media1.giphy.com/media/ATscYoRbi9R7pHS8aq/giphy.gif) \
+![Repo Star](/images/star.gif) \
 [ZekeriyaAY - Github](https://github.com/ZekeriyaAY "ZekeriyaAY - Github") \
 [LeadScript - Youtube](https://www.youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ)
