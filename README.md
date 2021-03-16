@@ -3,13 +3,12 @@
 &emsp;Bu projede walkie-talkie yani bas-konuş özellikli telsiz yapımını, gerekli malzemeleri, kodları ve benim nasıl yaptığımı, yapamadığımı öğreneceksiniz.
 
 > &emsp;Bu projenin videolu anlatımı ve testlerini aşağıdaki videodan izleyebilirsiniz.\
-[▶️ Arduino ile Walkie-Talkie(Telsiz) Yapımı ve Testleri](https://www.youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ)
+[▶️ Arduino ile Walkie-Talkie(Telsiz) Yapımı ve Testleri](https://www.youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ) (Video Henüz Yayınlanmadı)
 
 ![Telsizin Ön Yüzü](/images/perti-on.png)
 
 
-
-## Table Of Contents
+## 📑 Table Of Contents
 - [🛠️ Kullanılan Malzemeler](#%EF%B8%8F-kullanılan-malzemeler)
 - [📥 Kütüphanelerin ve Kodların İndirilmesi](#-kütüphanelerin-ve-kodların-i̇ndirilmesi)
 - [📤 Kütüphanelerin IDE'ye Eklenmesi](#-kütüphanelerin-ideye-eklenmesi)
@@ -23,7 +22,7 @@
 - [📤 Ana Kodun Arduino'ya Yüklenmesi](#-ana-kodun-arduinoya-yüklenmesi)
 - [📦 Lehim ile Sabit Devre Kurulumu](#-lehim-ile-sabit-devre-kurulumu)
 - [🔖 Yardım Aldığım Kaynaklar](#-yardım-aldığım-kaynaklar)
-- [🖋️Sonuç Nasıl Oldu?](#%EF%B8%8Fsonuç-nasıl-oldu)
+- [🖋️ Sonuç Nasıl Oldu?](%20%23%EF%B8%8Fsonu%C3%A7-nas%C4%B1l-oldu)
 
 
 
@@ -262,7 +261,7 @@ Ayrıca pertinaks üzerinde sabit devrede mikrofonda gürültü daha çok azald�
 
 
 
-## 🖋️Sonuç Nasıl Oldu?
+## 🖋️ Sonuç Nasıl Oldu?
 
 Sonuçtan büyük ölçekte memnunum.
 Birkaç tecrübe edindim.
@@ -274,7 +273,7 @@ Birkaç tecrübe edindim.
 
 ---
 
-**📎*Beni Aşağıdan Takip Ederek ve Abone Olarak Destekleyebilirsiniz***
+**📎 *Beni Aşağıdan Takip Ederek ve Abone Olarak Destekleyebilirsiniz***
 
 [ZekeriyaAY - Github](https://github.com/ZekeriyaAY)
 [LeadScript - Youtube](https://www.youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ)
