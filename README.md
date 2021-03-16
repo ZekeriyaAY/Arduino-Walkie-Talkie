@@ -77,7 +77,6 @@ Projede kullandığım malzemeleri, internetten aldığım sitelerden siz de ala
 **RF24Audio:** [github.com/nRF24/RF24Audio](https://github.com/nRF24/RF24Audio)\
 **Gerekli Kodlar:** [github.com/ZekeriyaAY/Arduino-Walkie-Talkie](https://github.com/ZekeriyaAY/Arduino-Walkie-Talkie)
 
----
 
 ## 📤 Kütüphanelerin IDE'ye Eklenmesi
 
@@ -88,7 +87,6 @@ Projede kullandığım malzemeleri, internetten aldığım sitelerden siz de ala
 Arduino IDE > Taslak > library ekle > .ZIP Kitaplığı Ekle...
 ```
 
----
 
 ## 📤 Kodların Arduino'ya Yüklenmesi
 Bu aşamaya şuan ihtiyaç yok ancak devre bağlantılarını yaptıktan sonra kodları burada anlatıldığı gibi yüklemeniz için eklendi.
@@ -110,7 +108,6 @@ Doğru kartı ve portu seçtiğinizden eminseniz iki Arduino'ya da kodları yük
 > Araçlar > İşlemci  //Diğer seçeneklere bi' bak
 > Ben de ATmega328P(Old Bootloader) seçtiğimde sorun geçmişti.
 > ```
----
 
 ## 🗺️ Devre Kurulum ve Test Edilmesi
 
@@ -128,7 +125,6 @@ Sıra aldığımız malzemeleri birleştirip test etmeye geldi.
 > - Boş olan pin, kullanılmayan `IRQ` pini.
 >
 > ![Modülün Adaptörsüz Bağlantısı (Resim 3)](/images/nRF24L01-adaptor-sema.png#center)
-
 
 
 Aşağıdaki pin dizilimleri *Nano/Uno* içindir. *Mega* için farklı pinler kullanılıyor. [🔖 **Yardım Aldığım Kaynaklar**](#-yardım-aldığım-kaynaklar)'da o bağlantıları bulabilirsiniz.
@@ -175,7 +171,6 @@ Kodu çalıştırdıktan sonra "**Seri Port Ekranı**" nda mikrofona konuştuğu
 
 Resim 7'de devrenin son hali var. Şemaları çizdiğimiz programda nRF24L01 antenli versiyonu veya adaptörü olmadığı için şemada antensiz ve adaptörsüz halini görüyorsunuz. Bağlantılarda herhangi bir farklılık yok.
 
----
 
 ## 📤 Ana Kodun Arduino'ya Yüklenmesi
 
@@ -183,7 +178,6 @@ Resim 7'de devrenin son hali var. Şemaları çizdiğimiz programda nRF24L01 ant
 
 Sorunsuz yüklendiyse butona basıp konuşmaya başlayabilirsiniz.
 
----
 
 ## 📦 Lehim ile Sabit Devre Kurulumu
 
@@ -214,7 +208,7 @@ Ayrıca pertinaks üzerinde sabit devrede mikrofonda gürültü daha çok azald�
 >Telsizin testlerini aşağıdaki linkten izleyebilirsiniz.\
 [▶️ **Arduino ile Walkie-Talkie(Telsiz) Yapımı**](https://www.youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ)
 
----
+
 
 ## 🔖 Yardım Aldığım Kaynaklar
 
@@ -228,7 +222,7 @@ Ayrıca pertinaks üzerinde sabit devrede mikrofonda gürültü daha çok azald�
 
 - [Walkie-Talkie Yapan Türkçe Kaynak](https://ugrdmr.wordpress.com/2018/07/22/arduino-telsiz-walkie-talkie/)
 
----
+
 
 ## 🖋️Sonuç Nasıl Oldu?
 
