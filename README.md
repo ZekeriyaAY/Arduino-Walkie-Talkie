@@ -7,6 +7,26 @@
 
 ![Telsizin Ön Yüzü](/images/perti-on.png)
 
+
+
+## Table Of Contents
+  * [🛠️ Kullanılan Malzemeler](#-kullanılan-malzemeler)
+  * [📥 Kütüphanelerin ve Kodların İndirilmesi](#-kütüphanelerin-ve-kodların-indirilmesi)
+  * [📤 Kütüphanelerin IDE'ye Eklenmesi](#-kütüphanelerin-ideye-eklenmesi)
+  * [📤 Kodların Arduino'ya Yüklenmesi](#-kodların-arduinoya-yüklenmesi)
+  * [🗺️ Devre Kurulum ve Test Edilmesi](#-devre-kurulum-ve-test-edilmesi)
+    + [📡nRF24L01 Bağlantısı ve Testi](#-nrf24l01-bağlantısı-ve-testi)
+    + [🔊 Hoparlör Bağlantısı ve Testi](#-hoparlör-bağlantısı-ve-testi)
+    + [🔘 Buton Bağlantısı ve Testi](#-buton-bağlantısı-ve-testi)
+    + [🎤 Mikrofon Bağlantısı ve Testi](#-mikrofon-bağlantısı-ve-testi)
+    + [🗺️ Tüm Bağlantı Şeması](#-tüm-bağlantı-şeması)
+  * [📤 Ana Kodun Arduino'ya Yüklenmesi](#-ana-kodun-arduinoya-yüklenmesi)
+  * [📦 Lehim ile Sabit Devre Kurulumu](#-lehim-ile-sabit-devre-kurulumu)
+  * [🔖 Yardım Aldığım Kaynaklar](#-yardım-aldığım-kaynaklar)
+  * [🖋️Sonuç Nasıl Oldu?](#-sonuç-nasıl-oldu)
+
+
+
 ## 🛠️ Kullanılan Malzemeler
 
 Projede kullandığım malzemeleri, internetten aldığım sitelerden siz de alabilirsiniz.
@@ -69,6 +89,8 @@ Projede kullandığım malzemeleri, internetten aldığım sitelerden siz de ala
 - **Kablo Soymak için Aletler**
     - Kablo soyma pensesi yerine yan keski ve pense kullandım ama soyma pensesi olsa daha kolay olurdu.
 
+
+
 ## 📥 Kütüphanelerin ve Kodların İndirilmesi
 
 *RF24*, *RF24Audio* kütüphanelerini ve telsiz için gereken kodları aşağıdaki bağlantılardan indirin.
@@ -76,6 +98,7 @@ Projede kullandığım malzemeleri, internetten aldığım sitelerden siz de ala
 **RF24:** [github.com/nRF24/RF24](https://github.com/nRF24/RF24)\
 **RF24Audio:** [github.com/nRF24/RF24Audio](https://github.com/nRF24/RF24Audio)\
 **Gerekli Kodlar:** [github.com/ZekeriyaAY/Arduino-Walkie-Talkie](https://github.com/ZekeriyaAY/Arduino-Walkie-Talkie)
+
 
 
 ## 📤 Kütüphanelerin IDE'ye Eklenmesi
@@ -86,6 +109,7 @@ Projede kullandığım malzemeleri, internetten aldığım sitelerden siz de ala
 ```arduino
 Arduino IDE > Taslak > library ekle > .ZIP Kitaplığı Ekle...
 ```
+
 
 
 ## 📤 Kodların Arduino'ya Yüklenmesi
@@ -109,9 +133,13 @@ Doğru kartı ve portu seçtiğinizden eminseniz iki Arduino'ya da kodları yük
 > Ben de ATmega328P(Old Bootloader) seçtiğimde sorun geçmişti.
 > ```
 
+
+
 ## 🗺️ Devre Kurulum ve Test Edilmesi
 
 Sıra aldığımız malzemeleri birleştirip test etmeye geldi.
+
+
 
 ### 📡nRF24L01 Bağlantısı ve Testi
 
@@ -139,6 +167,8 @@ Aşağıdaki pin dizilimleri *Nano/Uno* içindir. *Mega* için farklı pinler ku
 
 İki kodu da farklı Arduinolara yükledikten sonra alıcı kodunu yüklediğiniz Arduino'nun "**Seri Port Ekranı**" nda "**Hello Ardu**" yazısını görüyorsanız bağlantılar doğrudur demektir.
 
+
+
 ### 🔊 Hoparlör Bağlantısı ve Testi
 
 ![Hoparlör Bağlantı Şeması (Resim 4)](/images/hoparlor-sema.png#center)
@@ -147,6 +177,8 @@ Hoparlör üzerinde kırmızı kablo(+) D10 pinine , siyah kablo(-) GND pinine b
 
 > `Arduino-Walkie-Talkie-main.zip` dosyasındaki `hoparlor.ino` kodunu Arduino'ya yükleyip hoparlör bağlantılarını melodi sesleriyle test edebilirsiniz.
 
+
+
 ### 🔘 Buton Bağlantısı ve Testi
 
 ![Buton Bağlantı Şeması (Resim 5)](/images/buton-sema.png#center)
@@ -154,6 +186,8 @@ Hoparlör üzerinde kırmızı kablo(+) D10 pinine , siyah kablo(-) GND pinine b
 > `Arduino-Walkie-Talkie-main.zip` dosyasındaki `buton.ino` kodunu Arduino'ya yükleyin.
 
 Kodu yükledikten sonra "**Seri Port Ekranı**" nda butona bastığınızda sayaç sayıları artıyorsa sıradaki ve son bağlantıya geçebilirsiniz.
+
+
 
 ### 🎤 Mikrofon Bağlantısı ve Testi
 
@@ -165,6 +199,8 @@ Kodu yükledikten sonra "**Seri Port Ekranı**" nda butona bastığınızda saya
 
 Kodu çalıştırdıktan sonra "**Seri Port Ekranı**" nda mikrofona konuştuğunuz zaman Volt değerlerini göreceksiniz. Eğer değişim olmuyorsa bağlantıları kontrol edin.
 
+
+
 ### 🗺️ Tüm Bağlantı Şeması
 
 ![Tüm Bağlantı Şeması (Resim 7)](/images/son-sema.png#center)
@@ -172,11 +208,13 @@ Kodu çalıştırdıktan sonra "**Seri Port Ekranı**" nda mikrofona konuştuğu
 Resim 7'de devrenin son hali var. Şemaları çizdiğimiz programda nRF24L01 antenli versiyonu veya adaptörü olmadığı için şemada antensiz ve adaptörsüz halini görüyorsunuz. Bağlantılarda herhangi bir farklılık yok.
 
 
+
 ## 📤 Ana Kodun Arduino'ya Yüklenmesi
 
 İndirilen `Arduino-Walkie-Talkie-main.zip`  dosyasının içindeki `Walkie-Talkie-Kod.ino` kodu iki Arduino'ya [📤 Kodların Arduino'ya Yüklenmesi](#-kodların-arduinoya-yüklenmesi)nde anlatıldığı gibi yükleyin.
 
 Sorunsuz yüklendiyse butona basıp konuşmaya başlayabilirsiniz.
+
 
 
 ## 📦 Lehim ile Sabit Devre Kurulumu
@@ -239,5 +277,4 @@ Birkaç tecrübe edindim.
 **📎*Beni Aşağıdan Takip Ederek ve Abone Olarak Destekleyebilirsiniz***
 
 [ZekeriyaAY - Github](https://github.com/ZekeriyaAY)
-
 [LeadScript - Youtube](https://www.youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ)
