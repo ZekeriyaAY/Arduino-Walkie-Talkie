@@ -26,7 +26,7 @@
 
 
 ## Table Of Contents
-  * [🛠️ Kullanılan Malzemeler](# -kullanılan-malzemeler)
+  * [🛠️ Kullanılan Malzemeler](#%EF%B8%8F-kullanılan-malzemeler)
   * [📥 Kütüphanelerin ve Kodların İndirilmesi](#-kütüphanelerin-ve-kodların-indirilmesi)
   * [📤 Kütüphanelerin IDE'ye Eklenmesi](#-kütüphanelerin-ideye-eklenmesi)
   * [📤 Kodların Arduino'ya Yüklenmesi](#-kodların-arduinoya-yüklenmesi)
