@@ -5,15 +5,13 @@
 > &emsp;Bu projenin videolu anlatımı ve testlerini aşağıdaki videodan izleyebilirsiniz.\
 [▶️ Arduino ile Walkie-Talkie(Telsiz) Yapımı ve Testleri](https://www.youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ)
 
-
 ![Telsizin Ön Yüzü](/images/perti-on.png)
 
-# 🛠️ Kullanılan Malzemeler
+## 🛠️ Kullanılan Malzemeler
 
 Projede kullandığım malzemeleri, internetten aldığım sitelerden siz de alabilirsiniz.
 
-
-> ***⚠️ Ürünlerin linkleri isimlerinde bulunuyor.***
+***⚠️ Ürünlerin linkleri isimlerinde bulunuyor.***
 
 - 2 adet **[Arduino Nano](https://www.direnc.net/arduino-nano-usb-chip-ch340-usb-kablo-dahil)**
     - Boyutundan ötürü ***`Nano`*** tercih ettim. Uno, Mega veya Nano kullanmak size kalmış.
@@ -71,9 +69,7 @@ Projede kullandığım malzemeleri, internetten aldığım sitelerden siz de ala
 - **Kablo Soymak için Aletler**
     - Kablo soyma pensesi yerine yan keski ve pense kullandım ama soyma pensesi olsa daha kolay olurdu.
 
----
-
-# 📥 Kütüphanelerin ve Kodların İndirilmesi
+## 📥 Kütüphanelerin ve Kodların İndirilmesi
 
 *RF24*, *RF24Audio* kütüphanelerini ve telsiz için gereken kodları aşağıdaki bağlantılardan indirin.
 
@@ -83,7 +79,7 @@ Projede kullandığım malzemeleri, internetten aldığım sitelerden siz de ala
 
 ---
 
-# 📤 Kütüphanelerin IDE'ye Eklenmesi
+## 📤 Kütüphanelerin IDE'ye Eklenmesi
 
 İndirilen `.zip` dosyalarını aşağıdaki yol ile ekleyin.
 *Sadece RF24 ve RF24Audio dosyaları kütüphane dosyalarıdır.*
@@ -94,7 +90,7 @@ Arduino IDE > Taslak > library ekle > .ZIP Kitaplığı Ekle...
 
 ---
 
-# 📤 Kodların Arduino'ya Yüklenmesi
+## 📤 Kodların Arduino'ya Yüklenmesi
 Bu aşamaya şuan ihtiyaç yok ancak devre bağlantılarını yaptıktan sonra kodları burada anlatıldığı gibi yüklemeniz için eklendi.
 
 - İndirilen `Arduino-Walkie-Talkie.zip`  dosyasının içindeki `.ino` uzantılı arduino kodunu IDE ile açın.
@@ -116,11 +112,11 @@ Doğru kartı ve portu seçtiğinizden eminseniz iki Arduino'ya da kodları yük
 > ```
 ---
 
-# 🗺️ Devre Kurulum ve Test Edilmesi
+## 🗺️ Devre Kurulum ve Test Edilmesi
 
 Sıra aldığımız malzemeleri birleştirip test etmeye geldi.
 
-## 📡nRF24L01 Bağlantısı ve Testi
+### 📡nRF24L01 Bağlantısı ve Testi
 
 > nRF24L01 modülü ve kullanacağımız adaptör ile nRF24L01 bağlantıları aşağıda bulunuyor.
 >
@@ -147,7 +143,7 @@ Aşağıdaki pin dizilimleri *Nano/Uno* içindir. *Mega* için farklı pinler ku
 
 İki kodu da farklı Arduinolara yükledikten sonra alıcı kodunu yüklediğiniz Arduino'nun "**Seri Port Ekranı**" nda "**Hello Ardu**" yazısını görüyorsanız bağlantılar doğrudur demektir.
 
-## 🔊 Hoparlör Bağlantısı ve Testi
+### 🔊 Hoparlör Bağlantısı ve Testi
 
 ![Hoparlör Bağlantı Şeması (Resim 4)](/images/hoparlor-sema.png#center)
 
@@ -155,7 +151,7 @@ Hoparlör üzerinde kırmızı kablo(+) D10 pinine , siyah kablo(-) GND pinine b
 
 > `Arduino-Walkie-Talkie-main.zip` dosyasındaki `hoparlor.ino` kodunu Arduino'ya yükleyip hoparlör bağlantılarını melodi sesleriyle test edebilirsiniz.
 
-## 🔘 Buton Bağlantısı ve Testi
+### 🔘 Buton Bağlantısı ve Testi
 
 ![Buton Bağlantı Şeması (Resim 5)](/images/buton-sema.png#center)
 
@@ -163,7 +159,7 @@ Hoparlör üzerinde kırmızı kablo(+) D10 pinine , siyah kablo(-) GND pinine b
 
 Kodu yükledikten sonra "**Seri Port Ekranı**" nda butona bastığınızda sayaç sayıları artıyorsa sıradaki ve son bağlantıya geçebilirsiniz.
 
-## 🎤 Mikrofon Bağlantısı ve Testi
+### 🎤 Mikrofon Bağlantısı ve Testi
 
 ![Mikrofon Bağlantı Şeması (Resim 6)](/images/mik-sema.png#center)
 
@@ -173,7 +169,7 @@ Kodu yükledikten sonra "**Seri Port Ekranı**" nda butona bastığınızda saya
 
 Kodu çalıştırdıktan sonra "**Seri Port Ekranı**" nda mikrofona konuştuğunuz zaman Volt değerlerini göreceksiniz. Eğer değişim olmuyorsa bağlantıları kontrol edin.
 
-## 🗺️ Tüm Bağlantı Şeması
+### 🗺️ Tüm Bağlantı Şeması
 
 ![Tüm Bağlantı Şeması (Resim 7)](/images/son-sema.png#center)
 
@@ -181,7 +177,7 @@ Resim 7'de devrenin son hali var. Şemaları çizdiğimiz programda nRF24L01 ant
 
 ---
 
-# 📤 Ana Kodun Arduino'ya Yüklenmesi
+## 📤 Ana Kodun Arduino'ya Yüklenmesi
 
 İndirilen `Arduino-Walkie-Talkie-main.zip`  dosyasının içindeki `Walkie-Talkie-Kod.ino` kodu iki Arduino'ya [📤 Kodların Arduino'ya Yüklenmesi](#-kodların-arduinoya-yüklenmesi)nde anlatıldığı gibi yükleyin.
 
@@ -189,7 +185,7 @@ Sorunsuz yüklendiyse butona basıp konuşmaya başlayabilirsiniz.
 
 ---
 
-# 📦 Lehim ile Sabit Devre Kurulumu
+## 📦 Lehim ile Sabit Devre Kurulumu
 
 Devremizi breadboard üzerine kurduk, kodları yükleyip çalıştırdık. Sırada lehim ile pertinaks üzerine sabit devreyi kurma aşamasına geldik.
 
@@ -220,7 +216,7 @@ Ayrıca pertinaks üzerinde sabit devrede mikrofonda gürültü daha çok azald�
 
 ---
 
-# 🔖 Yardım Aldığım Kaynaklar
+## 🔖 Yardım Aldığım Kaynaklar
 
 - nRF24L01 Modülü ile İlgili
     - [hayaletveyap.com/arduino-ile-nrf24l01-kablosuz-rf-modul-kullanimi/](https://hayaletveyap.com/arduino-ile-nrf24l01-kablosuz-rf-modul-kullanimi/)
@@ -234,7 +230,7 @@ Ayrıca pertinaks üzerinde sabit devrede mikrofonda gürültü daha çok azald�
 
 ---
 
-# 🖋️Sonuç Nasıl Oldu?
+## 🖋️Sonuç Nasıl Oldu?
 
 Sonuçtan büyük ölçekte memnunum.
 Birkaç tecrübe edindim.
@@ -251,5 +247,3 @@ Birkaç tecrübe edindim.
 [ZekeriyaAY - Github](https://github.com/ZekeriyaAY)
 
 [LeadScript - Youtube](https://www.youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ)
-
-
