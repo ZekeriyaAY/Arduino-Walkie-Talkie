@@ -249,9 +249,6 @@ Ayrıca pertinaks üzerinde sabit devrede mikrofonda gürültü daha çok azald�
 ![Telsizlerin Önden Görünümü (Resim 13)](/images/son-on.jpeg "Telsizlerin Önden Görünümü (Resim 13)")
 ![Telsizlerin Arkadan Görünümü Görünümü (Resim 14)](/images/son-arka.jpeg "Telsizlerin Arkadan Görünümü Görünümü (Resim 14)")
 
->Telsizin testlerini aşağıdaki videodan izleyebilirsiniz.\
-[▶️ **Arduino ile Walkie-Talkie(Telsiz) Yapımı**](https://www.youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ)
-
 
 
 ## 🔖 Yardım Aldığım Kaynaklar
@@ -278,10 +275,13 @@ Sonuçtan büyük ölçekte memnunum. Birkaç tecrübe edindim.
 - Kabloları soymak için *kablo soyma pensesi*  kullanmak daha kısa sürmesine ve daha düzenli olmasına neden olabilirdi. Pense ve yan keski kullanarak biraz zor oldu.
 - Telsiz çalışırken iki taraf da butona basılı tutup konuşmaya çalışınca iki taraf da duymadığı gibi bug'a girmesine neden oluyor. Böyle durumlarda Arduino üzerindeki butona basıp kodların tekrar çalıştırılmasını sağlayarak bug sorunu o anlık çözebiliyoruz. Bir taraf konuşurken diğer taraf da dinlemesini bilmeli yani 🙃
 
+Telsizin testlerini ve yapım aşamasını aşağıdaki videodan izleyebilirsiniz.\
+[▶️ **Arduino ile Walkie-Talkie(Telsiz) Yapımı ve Testleri**](https://www.youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ) (Video Henüz Yayınlanmadı)
+
 ---
 
 ### 💓 Bu Repoya Yıldız, Youtube Videoma Yorumunu Bırakarak Bana Destek Olabilirsin
 
-![Repo Star](/images/star.gif) \
+![Repo Star](/images/repo-star.gif) \
 [ZekeriyaAY - Github](https://github.com/ZekeriyaAY "ZekeriyaAY - Github") \
-[LeadScript - Youtube](https://www.youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ)
+[LeadScript - Youtube](https://www.youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ "LeadScript - Youtube")
