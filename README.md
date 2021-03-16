@@ -282,7 +282,6 @@ Sonuçtan büyük ölçekte memnunum. Birkaç tecrübe edindim.
 
 ### 📎 Beni Aşağıdaki Linklerden Takip Ederek ve Abone Olarak Destekleyebilirsiniz
 
-![]("https://media1.giphy.com/media/ATscYoRbi9R7pHS8aq/giphy.gif") \
-
+[]("https://media1.giphy.com/media/ATscYoRbi9R7pHS8aq/giphy.gif") \
 [ZekeriyaAY - Github](https://github.com/ZekeriyaAY "ZekeriyaAY - Github") \
 [LeadScript - Youtube](https://www.youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ)
