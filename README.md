@@ -25,7 +25,7 @@
 - [🖋️ Sonuç Nasıl Oldu?](#%EF%B8%8F-sonuç-nasıl-oldu)
 
 
-
+---
 ## 🛠️ Kullanılan Malzemeler
 
 Projede kullandığım malzemeleri, internetten aldığım sitelerden siz de alabilirsiniz.
@@ -49,10 +49,10 @@ Projede kullandığım malzemeleri, internetten aldığım sitelerden siz de ala
     - Paraziti de azaltıyormuş(!)
     
 - 2 adet **[MAX4466 Elektret Mikrofon](https://www.f1depo.com/urun/gy-max4466-elektret-mikrofon-amplifikatoru-max446)**
-    - 5V veya 3.3V da kullanabilirsiniz ama 3.3V da daha temiz ses elde ettim.
+    - 5V veya 3.3V'da kullanabilirsiniz ama 3.3V'da daha temiz ses elde ettim.
     
 - 2 adet **[8R 0.5W 83DB 36x5mm Hoparlör](https://www.direnc.net/8r-05w-83db-36x5mm-hoparlor)**
-    - Arduino'nun besleyebileceği boyuta hoparlörlerin de çalışacağını düşünüyorum.
+    - Arduino'nun besleyebileceği boyutta hoparlörlerin de çalışacağını düşünüyorum.
 
 - 2 adet **[Buton](https://www.direnc.net/6x6-8-5mm-tach-buton-4-bacak)**
     - Benim kullandığım butonun tuş kısmı biraz uzun ve çapı küçük.
@@ -61,7 +61,7 @@ Projede kullandığım malzemeleri, internetten aldığım sitelerden siz de ala
     
 - 2 adet **[10K Direnç](https://www.direnc.net/10k-14w-direnc)** (*Kahve-Siyah-Turuncu-Altın*)
 
-- **Jumper Kablo** (*[Dişi - Erkek](https://www.direnc.net/40-adet-disi-erkek-jumper-20cm), [Erkek- Erkek](https://www.f1depo.com/40-pin-Erkek-Erkek-200mm-20cm-Jumper-Kablo,PR-695.html)*)
+- **Jumper Kablo** (*[Dişi-Erkek](https://www.direnc.net/40-adet-disi-erkek-jumper-20cm), [Erkek-Erkek](https://www.f1depo.com/40-pin-Erkek-Erkek-200mm-20cm-Jumper-Kablo,PR-695.html)*)
 
 - 2 adet **Breadboard**
     - Devreyi kurup test etmek için kullandım.
@@ -79,7 +79,7 @@ Projede kullandığım malzemeleri, internetten aldığım sitelerden siz de ala
     - İnce havya ucu ile lehim daha kolay yapılabilirdi bence.
     
 - **[Lehim Teli](https://www.f1depo.com/urun/pinax-tup-lehim-teli-1-2mm)**
-    - 1.2mm kalınlığında tel kullandım ama daha ince (0.75mm vb.) tel ile lehim işlemi daha kolay olabilirdi.
+    - 1.2mm kalınlığında tel kullandım ama daha ince (0.75mm vb.) tel ile lehim işlemi daha kolay olabilir.
     
 - **Silikon Tabancası**
     - Devrede hareketli parçaları sabitlemek ve devrelere teması engellemek için dışını balonlu naylonla(patlatılan poşetler) kaplamak için kullandım.
@@ -89,7 +89,7 @@ Projede kullandığım malzemeleri, internetten aldığım sitelerden siz de ala
     - Kablo soyma pensesi yerine yan keski ve pense kullandım ama soyma pensesi olsa daha kolay olurdu.
 
 
-
+---
 ## 📥 Kütüphanelerin ve Kodların İndirilmesi
 
 *RF24*, *RF24Audio* kütüphanelerini ve telsiz için gereken kodları aşağıdaki bağlantılardan indirin.
@@ -99,23 +99,24 @@ Projede kullandığım malzemeleri, internetten aldığım sitelerden siz de ala
 **Gerekli Kodlar:** [github.com/ZekeriyaAY/Arduino-Walkie-Talkie](https://github.com/ZekeriyaAY/Arduino-Walkie-Talkie)
 
 
-
+---
 ## 📤 Kütüphanelerin IDE'ye Eklenmesi
 
-İndirilen `.zip` dosyalarını aşağıdaki yol ile ekleyin.
-*Sadece RF24 ve RF24Audio dosyaları kütüphane dosyalarıdır.*
+İndirilen `.zip` dosyalarını aşağıdaki yol ile ekleyin.\
+
+⚠️ **Sadece *RF24* ve *RF24Audio* dosyaları kütüphane dosyalarıdır.**
 
 ```arduino
 Arduino IDE > Taslak > library ekle > .ZIP Kitaplığı Ekle...
 ```
 
 
-
+---
 ## 📤 Kodların Arduino'ya Yüklenmesi
 Bu aşamaya şuan ihtiyaç yok ancak devre bağlantılarını yaptıktan sonra kodları burada anlatıldığı gibi yüklemeniz için eklendi.
 
-- İndirilen `Arduino-Walkie-Talkie.zip`  dosyasının içindeki `.ino` uzantılı arduino kodunu IDE ile açın.
-- Arduino'yu bilgisayara takın.
+1. İndirilen `Arduino-Walkie-Talkie-main.zip`  dosyasının içindeki `.ino` uzantılı Arduino kodunu IDE ile açın.
+2. Arduino'yu bilgisayara takın.
 
 ```arduino
 Araçlar > Kart //Kullandığınız Arduino türünü seçin
@@ -133,7 +134,7 @@ Doğru kartı ve portu seçtiğinizden eminseniz iki Arduino'ya da kodları yük
 > ```
 
 
-
+---
 ## 🗺️ Devre Kurulum ve Test Edilmesi
 
 Sıra aldığımız malzemeleri birleştirip test etmeye geldi.
@@ -142,16 +143,14 @@ Sıra aldığımız malzemeleri birleştirip test etmeye geldi.
 
 ### 📡nRF24L01 Bağlantısı ve Testi
 
-> nRF24L01 modülü ve kullanacağımız adaptör ile nRF24L01 bağlantıları aşağıda bulunuyor.
->
->![nRF24L01 Modülün Pin Çıkışları (Resim 1)](/images/nRF24L01-pinout.png#center)
+nRF24L01 modülü ve kullanacağımız adaptör ile nRF24L01 bağlantıları aşağıda bulunuyor.
 
-![nRF24L01 Modül Adaptörü (Resim 2)](/images/nRF24L01-adaptor.jpeg#center)
+![nRF24L01 Modülün Pin Çıkışları (Resim 1)](/images/nRF24L01-pinout.png) ![nRF24L01 Modül Adaptörü (Resim 2)](/images/nRF24L01-adaptor.jpeg)
 
-> Adaptör kullanmadan yapılan bağlantı aşağıda gösteriliyor. Adaptör kullanarak yapılan bağlantıda tek değişiklik `VCC`'yi `3.3V` yerine `5V`'a bağlamanız.
-> - Boş olan pin, kullanılmayan `IRQ` pini.
->
-> ![Modülün Adaptörsüz Bağlantısı (Resim 3)](/images/nRF24L01-adaptor-sema.png#center)
+Adaptör kullanmadan yapılan bağlantı aşağıda gösteriliyor. Adaptör kullanarak yapılan bağlantıda tek değişiklik `VCC`'yi `3.3V` yerine `5V`'a bağlamanız.
+- Boş olan pin, kullanılmayan `IRQ` pini.
+
+![Modülün Adaptörsüz Bağlantısı (Resim 3)](/images/nRF24L01-adaptor-sema.png)
 
 
 Aşağıdaki pin dizilimleri *Nano/Uno* içindir. *Mega* için farklı pinler kullanılıyor. [🔖 **Yardım Aldığım Kaynaklar**](#-yardım-aldığım-kaynaklar)'da o bağlantıları bulabilirsiniz.
@@ -170,7 +169,7 @@ Aşağıdaki pin dizilimleri *Nano/Uno* içindir. *Mega* için farklı pinler ku
 
 ### 🔊 Hoparlör Bağlantısı ve Testi
 
-![Hoparlör Bağlantı Şeması (Resim 4)](/images/hoparlor-sema.png#center)
+![Hoparlör Bağlantı Şeması (Resim 4)](/images/hoparlor-sema.png)
 
 Hoparlör üzerinde kırmızı kablo(+) D10 pinine , siyah kablo(-) GND pinine bağladım.
 
@@ -180,7 +179,7 @@ Hoparlör üzerinde kırmızı kablo(+) D10 pinine , siyah kablo(-) GND pinine b
 
 ### 🔘 Buton Bağlantısı ve Testi
 
-![Buton Bağlantı Şeması (Resim 5)](/images/buton-sema.png#center)
+![Buton Bağlantı Şeması (Resim 5)](/images/buton-sema.png)
 
 > `Arduino-Walkie-Talkie-main.zip` dosyasındaki `buton.ino` kodunu Arduino'ya yükleyin.
 
@@ -190,7 +189,7 @@ Kodu yükledikten sonra "**Seri Port Ekranı**" nda butona bastığınızda saya
 
 ### 🎤 Mikrofon Bağlantısı ve Testi
 
-![Mikrofon Bağlantı Şeması (Resim 6)](/images/mik-sema.png#center)
+![Mikrofon Bağlantı Şeması (Resim 6)](/images/mik-sema.png)
 
 5V'a da bağlayabilirsiniz. Ancak 3.3V da daha temiz ses elde ettiğim için 3.3V kullandım.
 
@@ -202,7 +201,7 @@ Kodu çalıştırdıktan sonra "**Seri Port Ekranı**" nda mikrofona konuştuğu
 
 ### 🗺️ Tüm Bağlantı Şeması
 
-![Tüm Bağlantı Şeması (Resim 7)](/images/son-sema.png#center)
+![Tüm Bağlantı Şeması (Resim 7)](/images/son-sema.png)
 
 Resim 7'de devrenin son hali var. Şemaları çizdiğimiz programda nRF24L01 antenli versiyonu veya adaptörü olmadığı için şemada antensiz ve adaptörsüz halini görüyorsunuz. Bağlantılarda herhangi bir farklılık yok.
 
@@ -223,23 +222,23 @@ Devremizi breadboard üzerine kurduk, kodları yükleyip çalıştırdık. Sıra
 >Bu aşama zorunlu değildir. İsterseniz breadboard üzerinde kullanabilirsiniz ancak pertinaks üzerinde kablo karmaşası olmadan daha kullanışlı olduğu için bu aşamayı yaptım.
 Ayrıca pertinaks üzerinde sabit devrede mikrofonda gürültü daha çok azaldı. Sanırım jumper kablolar daha az, daha kısa olduğu için oldu.
 
-![Devrenin Önden Görünümü (Resim 8)](/images/perti-on.png#center)
+![Devrenin Önden Görünümü (Resim 8)](/images/perti-on.png)
 
-![Devrenin Arkadan Antensiz Görünümü (Resim 9)](/images/perti-arka-antensiz.png#center)
+![Devrenin Arkadan Antensiz Görünümü (Resim 9)](/images/perti-arka-antensiz.png)
 
-![Devrenin Arkadan Antenli Görünümü (Resim 10)](/images/perti-arka-antenli.png#center)
+![Devrenin Arkadan Antenli Görünümü (Resim 10)](/images/perti-arka-antenli.png)
 
 >Alıcı-verici modülü sabitlemek için altına sıcak silikon sıktım. Yoksa hareket ettiğinde pinlerde temassızlık oluyor ve telsiz bağlantıları kesiliyordu.
 
-![Devrenin Yandan Görünümü (Resim 11)](/images/perti-yan.jpeg#center)
+![Devrenin Yandan Görünümü (Resim 11)](/images/perti-yan.jpeg)
 
 >Devrenin arkasındaki pinlere dokununca devre bozulabiliyor. Bu yüzden arkasına ve önüne patlatılan poşetlerden kesip sıcak silikonla yapıştırdım. Böylece devrelere temas etmemiş oluyoruz. 
 
-![Devrenin Arkadan Paketli Görünümü (Resim 12)](/images/son-arka-tek.png#center)
+![Devrenin Arkadan Paketli Görünümü (Resim 12)](/images/son-arka-tek.png)
 
-![Telsizlerin Önden Görünümü (Resim 13))](/images/son-on.jpeg#center)
+![Telsizlerin Önden Görünümü (Resim 13))](/images/son-on.jpeg)
 
-![Telsizlerin Arkadan Görünümü (Resim 14)](/images/son-arka.jpeg#center)
+![Telsizlerin Arkadan Görünümü (Resim 14)](/images/son-arka.jpeg)
 
 
 >Telsizin testlerini aşağıdaki linkten izleyebilirsiniz.\
@@ -250,6 +249,7 @@ Ayrıca pertinaks üzerinde sabit devrede mikrofonda gürültü daha çok azald�
 ## 🔖 Yardım Aldığım Kaynaklar
 
 - nRF24L01 Modülü ile İlgili
+    - Arduino Mega kullanıcaklar için bağlantılar bu linklerde bulunuyor.
     - [hayaletveyap.com/arduino-ile-nrf24l01-kablosuz-rf-modul-kullanimi/](https://hayaletveyap.com/arduino-ile-nrf24l01-kablosuz-rf-modul-kullanimi/)
     - [lastminuteengineers.com/nrf24l01-arduino-wireless-communication/](https://lastminuteengineers.com/nrf24l01-arduino-wireless-communication/)
 
@@ -275,5 +275,5 @@ Birkaç tecrübe edindim.
 
 **📎 *Beni Aşağıdan Takip Ederek ve Abone Olarak Destekleyebilirsiniz***
 
-[ZekeriyaAY - Github](https://github.com/ZekeriyaAY)
+[ZekeriyaAY - Github](https://github.com/ZekeriyaAY) \
 [LeadScript - Youtube](https://www.youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ)
