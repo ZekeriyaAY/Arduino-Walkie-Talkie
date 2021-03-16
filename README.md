@@ -1,20 +1,5 @@
 # 📻 Arduino ile Walkie-Talkie(Telsiz) Projesi
 
-- [🛠️ Kullanılan Malzemeler](#----kullan-lan-malzemeler)
-- [📥 Kütüphanelerin ve Kodların İndirilmesi](#---k-t-phanelerin-ve-kodlar-n-i-ndirilmesi)
-- [📤 Kütüphanelerin IDE'ye Eklenmesi](#---k-t-phanelerin-ide-ye-eklenmesi)
-- [📤 Kodların Arduino'ya Yüklenmesi](#---kodlar-n-arduino-ya-y-klenmesi)
-- [🗺️ Devre Kurulum ve Test Edilmesi](#----devre-kurulum-ve-test-edilmesi)
-  * [📡nRF24L01 Bağlantısı ve Testi](#--nrf24l01-ba-lant-s--ve-testi)
-  * [🔊 Hoparlör Bağlantısı ve Testi](#---hoparl-r-ba-lant-s--ve-testi)
-  * [🔘 Buton Bağlantısı ve Testi](#---buton-ba-lant-s--ve-testi)
-  * [🎤 Mikrofon Bağlantısı ve Testi](#---mikrofon-ba-lant-s--ve-testi)
-  * [🗺️ Tüm Bağlantı Şeması](#----t-m-ba-lant---emas-)
-- [📤 Ana Kodun Arduino'ya Yüklenmesi](#---ana-kodun-arduino-ya-y-klenmesi)
-- [📦 Lehim ile Sabit Devre Kurulumu](#---lehim-ile-sabit-devre-kurulumu)
-- [🔖 Yardım Aldığım Kaynaklar](#---yard-m-ald---m-kaynaklar)
-- [🖋️Sonuç Nasıl Oldu?](#---sonu--nas-l-oldu-)
-
 &emsp;Bu projede walkie-talkie yani bas-konuş özellikli telsiz yapımını, gerekli malzemeleri, kodları ve benim nasıl yaptığımı, yapamadığımı öğreneceksiniz.
 
 > &emsp;Bu projenin videolu anlatımı ve testlerini aşağıdaki videodan izleyebilirsiniz.\
@@ -24,22 +9,21 @@
 
 
 
-
 ## Table Of Contents
-  * [🛠️ Kullanılan Malzemeler](#%EF%B8%8F-kullanılan-malzemeler)
-  * [📥 Kütüphanelerin ve Kodların İndirilmesi](#-kütüphanelerin-ve-kodların-indirilmesi)
-  * [📤 Kütüphanelerin IDE'ye Eklenmesi](#-kütüphanelerin-ideye-eklenmesi)
-  * [📤 Kodların Arduino'ya Yüklenmesi](#-kodların-arduinoya-yüklenmesi)
-  * [🗺️ Devre Kurulum ve Test Edilmesi](#-devre-kurulum-ve-test-edilmesi)
-    + [📡nRF24L01 Bağlantısı ve Testi](#-nrf24l01-bağlantısı-ve-testi)
-    + [🔊 Hoparlör Bağlantısı ve Testi](#-hoparlör-bağlantısı-ve-testi)
-    + [🔘 Buton Bağlantısı ve Testi](#-buton-bağlantısı-ve-testi)
-    + [🎤 Mikrofon Bağlantısı ve Testi](#-mikrofon-bağlantısı-ve-testi)
-    + [🗺️ Tüm Bağlantı Şeması](#-tüm-bağlantı-şeması)
-  * [📤 Ana Kodun Arduino'ya Yüklenmesi](#-ana-kodun-arduinoya-yüklenmesi)
-  * [📦 Lehim ile Sabit Devre Kurulumu](#-lehim-ile-sabit-devre-kurulumu)
-  * [🔖 Yardım Aldığım Kaynaklar](#-yardım-aldığım-kaynaklar)
-  * [🖋️Sonuç Nasıl Oldu?](#-sonuç-nasıl-oldu)
+- [🛠️ Kullanılan Malzemeler](#%EF%B8%8F-kullanılan-malzemeler)
+- [📥 Kütüphanelerin ve Kodların İndirilmesi](#-kütüphanelerin-ve-kodların-i̇ndirilmesi)
+- [📤 Kütüphanelerin IDE'ye Eklenmesi](#-kütüphanelerin-ideye-eklenmesi)
+- [📤 Kodların Arduino'ya Yüklenmesi](#-kodların-arduinoya-yüklenmesi)
+- [🗺️ Devre Kurulum ve Test Edilmesi](#%EF%B8%8F-devre-kurulum-ve-test-edilmesi)
+  * [📡nRF24L01 Bağlantısı ve Testi](#nrf24l01-bağlantısı-ve-testi)
+  * [🔊 Hoparlör Bağlantısı ve Testi](#-hoparlör-bağlantısı-ve-testi)
+  * [🔘 Buton Bağlantısı ve Testi](#-buton-bağlantısı-ve-testi)
+  * [🎤 Mikrofon Bağlantısı ve Testi](#-mikrofon-bağlantısı-ve-testi)
+  * [🗺️ Tüm Bağlantı Şeması](#%EF%B8%8F-tüm-bağlantı-şeması)
+- [📤 Ana Kodun Arduino'ya Yüklenmesi](#-ana-kodun-arduinoya-yüklenmesi)
+- [📦 Lehim ile Sabit Devre Kurulumu](#-lehim-ile-sabit-devre-kurulumu)
+- [🔖 Yardım Aldığım Kaynaklar](#-yardım-aldığım-kaynaklar)
+- [🖋️Sonuç Nasıl Oldu?](#%EF%B8%8Fsonuç-nasıl-oldu)
 
 
 
