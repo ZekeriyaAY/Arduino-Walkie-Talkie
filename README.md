@@ -237,9 +237,8 @@ Ayrıca pertinaks üzerinde sabit devrede mikrofonda gürültü daha çok azald�
 
 ![Devrenin Önden Görünümü (Resim 8)](/images/perti-on.png "Devrenin Önden Görünümü (Resim 8)")
 
-<p align="center">
- <img src="/images/perti-arka-antensiz.png" alt="Devrenin Arkadan Antensiz Görünümü (Resim 9)" width="470"> <img src="/images/perti-arka-antenli.png" alt="Devrenin Arkadan Antenli Görünümü (Resim 10)" width="470">
-</p>
+![Devrenin Arkadan Antensiz Görünümü (Resim 9)](/images/perti-arka-antensiz.png "Devrenin Arkadan Antensiz Görünümü (Resim 9)")
+![Devrenin Arkadan Antenli Görünümü (Resim 10)](/images/perti-arka-antenli.png "Devrenin Arkadan Antenli Görünümü (Resim 10)")
 
 >Alıcı-verici modülü sabitlemek için altına sıcak silikon sıktım. Yoksa hareket ettiğinde pinlerde temassızlık oluyor ve telsiz bağlantıları kesiliyordu.
 
@@ -249,10 +248,9 @@ Ayrıca pertinaks üzerinde sabit devrede mikrofonda gürültü daha çok azald�
 
 ![Devrenin Arkadan Paketli Görünümü (Resim 12)](/images/son-arka-tek.png "Devrenin Arkadan Paketli Görünümü (Resim 12)")
 
-<p align="center">
- <img src="/images/son-on.jpeg" alt="Telsizlerin Önden Görünümü (Resim 13)" width="470"> <img src="/images/son-arka.jpeg" alt="Telsizlerin Arkadan Görünümü (Resim 14)" width="470">
-</p>
 
+![Telsizlerin Önden Görünümü (Resim 13)](/images/son-on.jpeg "Telsizlerin Önden Görünümü (Resim 13)")
+![Telsizlerin Arkadan Görünümü Görünümü (Resim 14)](/images/son-arka.jpeg "Telsizlerin Arkadan Görünümü Görünümü (Resim 14)")
 
 >Telsizin testlerini aşağıdaki videodan izleyebilirsiniz.\
 [▶️ **Arduino ile Walkie-Talkie(Telsiz) Yapımı**](https://www.youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ)
