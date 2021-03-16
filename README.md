@@ -281,7 +281,5 @@ Telsizin testlerini ve yapım aşamasını aşağıdaki videodan izleyebilirsini
 ---
 
 ### 💓 Bu Repoya Yıldız, Youtube Videoma Yorumunu Bırakarak Bana Destek Olabilirsin
-
-![Repo Star](/images/repo-star.gif) \
-[ZekeriyaAY - Github](https://github.com/ZekeriyaAY "ZekeriyaAY - Github") \
-[LeadScript - Youtube](https://www.youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ "LeadScript - Youtube")
+[LeadScript - Youtube](https://www.youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ "LeadScript - Youtube") \
+![Repo Star](/images/github-repo-star.gif)
