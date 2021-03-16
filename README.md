@@ -280,15 +280,9 @@ Sonuçtan büyük ölçekte memnunum. Birkaç tecrübe edindim.
 
 ---
 
-**📎 *Beni Aşağıdaki Linklerden Takip Ederek ve Abone Olarak Destekleyebilirsiniz***
-<p align="center">
-<img src="https://media1.giphy.com/media/ATscYoRbi9R7pHS8aq/giphy.gif">
-</p>
+### 📎 Beni Aşağıdaki Linklerden Takip Ederek ve Abone Olarak Destekleyebilirsiniz
+
+![]("https://media1.giphy.com/media/ATscYoRbi9R7pHS8aq/giphy.gif") \
+
 [ZekeriyaAY - Github](https://github.com/ZekeriyaAY "ZekeriyaAY - Github") \
 [LeadScript - Youtube](https://www.youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ)
-
-
- 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=RcRpn_e8Jdk" target="_blank"><img src="http://img.youtube.com/vi/RcRpn_e8Jdk/0.jpg" border="10" /></a>
-
-[![Youtube Video](http://img.youtube.com/vi/RcRpn_e8Jdk/0.jpg)](http://www.youtube.com/watch?v=RcRpn_e8Jdk)
