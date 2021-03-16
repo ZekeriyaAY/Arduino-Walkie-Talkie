@@ -275,7 +275,7 @@ Sonuçtan büyük ölçekte memnunum. Birkaç tecrübe edindim.
 - Kabloları soymak için *kablo soyma pensesi*  kullanmak daha kısa sürmesine ve daha düzenli olmasına neden olabilirdi. Pense ve yan keski kullanarak biraz zor oldu.
 - Telsiz çalışırken iki taraf da butona basılı tutup konuşmaya çalışınca iki taraf da duymadığı gibi bug'a girmesine neden oluyor. Böyle durumlarda Arduino üzerindeki butona basıp kodların tekrar çalıştırılmasını sağlayarak bug sorunu o anlık çözebiliyoruz. Bir taraf konuşurken diğer taraf da dinlemesini bilmeli yani 🙃
 
-Telsizin testlerini ve yapım aşamasını aşağıdaki videodan izleyebilirsiniz.\
+### 🧪 Telsizin testlerini ve yapım aşamasını aşağıdaki videodan izleyebilirsiniz.\
 [▶️ **Arduino ile Walkie-Talkie(Telsiz) Yapımı ve Testleri**](https://www.youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ) (Video Henüz Yayınlanmadı)
 
 ---
