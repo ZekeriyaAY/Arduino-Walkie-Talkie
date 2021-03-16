@@ -154,6 +154,7 @@ nRF24L01 modülü ve kullanacağımız adaptörün pin dizilimini aşağıdaki r
 ![](/images/nRF24L01-adaptor.jpeg "nRF24L01 Modül Adaptörü (Resim 2)")
 -->
 Adaptör kullanmadan yapılan bağlantı aşağıda gösteriliyor. Adaptör kullanarak yapılan bağlantıda tek değişiklik `VCC`'yi `3.3V` yerine `5V`'a bağlamanız.
+
 * Boş olan pin, kullanılmayan `IRQ` pini.
 
 ![Modülün Adaptörsüz Bağlantısı (Resim 3)](/images/nRF24L01-adaptor-sema.png "Modülün Adaptörsüz Bağlantısı (Resim 3)")
