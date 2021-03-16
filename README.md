@@ -40,7 +40,7 @@ Projede kullandığım malzemeleri, internetten aldığım sitelerden siz de ala
     - Antenli versiyonunu kullandım.
     - İki versiyonun da bağlantıları aynı.
     - Antensiz versiyonu açık alanda ort. 100m, kapalı alanda ort. 10-20m mesafede çalışıyormuş(!)(Söylenene göre...)
-    - Antenli versiyonu ise ort. 10 kat artıyor. (Mesafe testinin videosu [*🔖 Yardım Aldığım Kaynaklar*](#-yardım-aldığım-kaynaklar "🔖 **Yardım Aldığım Kaynaklar**")'da var)
+    - Antenli versiyonu ise ort. 10 kat artıyor. (Mesafe testinin videosu [*🔖 Yardım Aldığım Kaynaklar*](#-yardım-aldığım-kaynaklar "🔖Yardım Aldığım Kaynaklar")'da var)
     - VCC yi 3.3V'a bağlayın yoksa bozuluyor veya adaptör ile 5V da kullanın. Ben adaptörle 5V da kullandım.
     
 - 2 adet **[nRF24L01 Wireless Modül Adaptörü](ttps://www.direnc.net/8-pin-nrf24l01-wireless-modul-adaptoru)**
@@ -144,17 +144,22 @@ Sıra aldığımız malzemeleri birleştirip test etmeye geldi.
 ### 📡nRF24L01 Bağlantısı ve Testi
 
 nRF24L01 modülü ve kullanacağımız adaptörün pin dizilimini aşağıdaki resimlerden ulaşabilirsiniz.
-
+<p align="center">
+<img src="/images/nRF24L01-adaptor.jpeg" alt="nRF24L01 Modül Adaptörü (Resim 1)">
+<img src="/images/nRF24L01-pinout.png" alt="nRF24L01 Modülün Pin Çıkışları (Resim 2)">
+ 
+</p>
+<!--
 ![nRF24L01 Modülün Pin Çıkışları (Resim 1)](/images/nRF24L01-pinout.png "nRF24L01 Modülün Pin Çıkışları (Resim 1)")
-![nRF24L01 Modül Adaptörü (Resim 2)](/images/nRF24L01-adaptor.jpeg "nRF24L01 Modül Adaptörü (Resim 2)")
-
+![](/images/nRF24L01-adaptor.jpeg "nRF24L01 Modül Adaptörü (Resim 2)")
+-->
 Adaptör kullanmadan yapılan bağlantı aşağıda gösteriliyor. Adaptör kullanarak yapılan bağlantıda tek değişiklik `VCC`'yi `3.3V` yerine `5V`'a bağlamanız.
 - Boş olan pin, kullanılmayan `IRQ` pini.
 
 ![Modülün Adaptörsüz Bağlantısı (Resim 3)](/images/nRF24L01-adaptor-sema.png "Modülün Adaptörsüz Bağlantısı (Resim 3)")
 
 
-Aşağıdaki pin dizilimleri *Nano/Uno* içindir. *Mega* için farklı pinler kullanılıyor. [🔖 **Yardım Aldığım Kaynaklar**](#-yardım-aldığım-kaynaklar "🔖 **Yardım Aldığım Kaynaklar**")'da o bağlantıları bulabilirsiniz.
+Aşağıdaki pin dizilimleri *Nano/Uno* içindir. *Mega* için farklı pinler kullanılıyor. [🔖 **Yardım Aldığım Kaynaklar**](#-yardım-aldığım-kaynaklar "🔖Yardım Aldığım Kaynaklar")'da o bağlantıları bulabilirsiniz.
 
 
 | **nRF24L01** | **Arduino** |
@@ -216,7 +221,7 @@ Resim 7'de devrenin son hali var. Şemaları çizdiğimiz programda nRF24L01 ant
 
 ## 📤 Ana Kodun Arduino'ya Yüklenmesi
 
-İndirilen `Arduino-Walkie-Talkie-main.zip`  dosyasının içindeki `main.ino` kodu iki Arduino'ya [📤 Kodların Arduino'ya Yüklenmesi](#-kodların-arduinoya-yüklenmesi "📤 Kodların Arduino'ya Yüklenmesi")nde anlatıldığı gibi yükleyin.
+İndirilen `Arduino-Walkie-Talkie-main.zip`  dosyasının içindeki `main.ino` kodu iki Arduino'ya [📤 Kodların Arduino'ya Yüklenmesi](#-kodların-arduinoya-yüklenmesi "📤Kodların Arduino'ya Yüklenmesi")nde anlatıldığı gibi yükleyin.
 
 Sorunsuz yüklendiyse butona basıp konuşmaya başlayabilirsiniz.
 
@@ -231,9 +236,9 @@ Ayrıca pertinaks üzerinde sabit devrede mikrofonda gürültü daha çok azald�
 
 ![Devrenin Önden Görünümü (Resim 8)](/images/perti-on.png "Devrenin Önden Görünümü (Resim 8)")
 
-![Devrenin Arkadan Antensiz Görünümü (Resim 9)](/images/perti-arka-antensiz.png "Devrenin Arkadan Antensiz Görünümü (Resim 9)")
-
-![Devrenin Arkadan Antenli Görünümü (Resim 10)](/images/perti-arka-antenli.png "Devrenin Arkadan Antenli Görünümü (Resim 10)")
+<p align="center">
+ <img src="/images/perti-arka-antensiz.png" alt="Devrenin Arkadan Antensiz Görünümü (Resim 9)" width="470"> <img src="/images/perti-arka-antenli.png" alt="Devrenin Arkadan Antenli Görünümü (Resim 10)" width="470">
+</p>
 
 >Alıcı-verici modülü sabitlemek için altına sıcak silikon sıktım. Yoksa hareket ettiğinde pinlerde temassızlık oluyor ve telsiz bağlantıları kesiliyordu.
 
@@ -243,9 +248,9 @@ Ayrıca pertinaks üzerinde sabit devrede mikrofonda gürültü daha çok azald�
 
 ![Devrenin Arkadan Paketli Görünümü (Resim 12)](/images/son-arka-tek.png "Devrenin Arkadan Paketli Görünümü (Resim 12)")
 
-![Telsizlerin Önden Görünümü (Resim 13)](/images/son-on.jpeg "Telsizlerin Önden Görünümü (Resim 13)")
-
-![Telsizlerin Arkadan Görünümü (Resim 14)](/images/son-arka.jpeg "Telsizlerin Arkadan Görünümü (Resim 14)")
+<p align="center">
+ <img src="/images/son-on.jpeg" alt="Telsizlerin Önden Görünümü (Resim 13)" width="470"> <img src="/images/son-arka.jpeg" alt="Telsizlerin Arkadan Görünümü (Resim 14)" width="470">
+</p>
 
 
 >Telsizin testlerini aşağıdaki videodan izleyebilirsiniz.\
@@ -280,12 +285,14 @@ Sonuçtan büyük ölçekte memnunum. Birkaç tecrübe edindim.
 ---
 
 **📎 *Beni Aşağıdaki Linklerden Takip Ederek ve Abone Olarak Destekleyebilirsiniz***
-
+<p align="center">
+<img src="https://media1.giphy.com/media/ATscYoRbi9R7pHS8aq/giphy.gif">
+</p>
 [ZekeriyaAY - Github](https://github.com/ZekeriyaAY "ZekeriyaAY - Github") \
 [LeadScript - Youtube](https://www.youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ)
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
-" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
-[![Youtube Video](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+ 
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=RcRpn_e8Jdk" target="_blank"><img src="http://img.youtube.com/vi/RcRpn_e8Jdk/0.jpg" border="10" /></a>
+
+[![Youtube Video](http://img.youtube.com/vi/RcRpn_e8Jdk/0.jpg)](http://www.youtube.com/watch?v=RcRpn_e8Jdk)
