@@ -236,7 +236,6 @@ Devremizi breadboard üzerine kurduk, kodları yükleyip çalıştırdık. Sıra
 Ayrıca pertinaks üzerinde sabit devrede mikrofonda gürültü daha çok azaldı. Sanırım jumper kablolar daha az, daha kısa olduğu için oldu.
 
 ![Devrenin Önden Görünümü (Resim 8)](/images/perti-on.png "Devrenin Önden Görünümü (Resim 8)")
-
 ![Devrenin Arkadan Antensiz Görünümü (Resim 9)](/images/perti-arka-antensiz.png "Devrenin Arkadan Antensiz Görünümü (Resim 9)")
 ![Devrenin Arkadan Antenli Görünümü (Resim 10)](/images/perti-arka-antenli.png "Devrenin Arkadan Antenli Görünümü (Resim 10)")
 
@@ -247,8 +246,6 @@ Ayrıca pertinaks üzerinde sabit devrede mikrofonda gürültü daha çok azald�
 >Devrenin arkasındaki pinlere dokununca devre bozulabiliyor. Bu yüzden arkasına ve önüne patlatılan poşetlerden kesip sıcak silikonla yapıştırdım. Böylece devrelere temas etmemiş oluyoruz. 
 
 ![Devrenin Arkadan Paketli Görünümü (Resim 12)](/images/son-arka-tek.png "Devrenin Arkadan Paketli Görünümü (Resim 12)")
-
-
 ![Telsizlerin Önden Görünümü (Resim 13)](/images/son-on.jpeg "Telsizlerin Önden Görünümü (Resim 13)")
 ![Telsizlerin Arkadan Görünümü Görünümü (Resim 14)](/images/son-arka.jpeg "Telsizlerin Arkadan Görünümü Görünümü (Resim 14)")
 
