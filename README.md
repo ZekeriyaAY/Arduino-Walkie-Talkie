@@ -25,7 +25,7 @@
 - [🖋️ Sonuç Nasıl Oldu?](#%EF%B8%8F-sonuç-nasıl-oldu)
 
 
----
+
 ## 🛠️ Kullanılan Malzemeler
 
 Projede kullandığım malzemeleri, internetten aldığım sitelerden siz de alabilirsiniz.
@@ -89,7 +89,7 @@ Projede kullandığım malzemeleri, internetten aldığım sitelerden siz de ala
     - Kablo soyma pensesi yerine yan keski ve pense kullandım ama soyma pensesi olsa daha kolay olurdu.
 
 
----
+
 ## 📥 Kütüphanelerin ve Kodların İndirilmesi
 
 *RF24*, *RF24Audio* kütüphanelerini ve telsiz için gereken kodları aşağıdaki bağlantılardan indirin.
@@ -99,7 +99,7 @@ Projede kullandığım malzemeleri, internetten aldığım sitelerden siz de ala
 **Gerekli Kodlar:** [github.com/ZekeriyaAY/Arduino-Walkie-Talkie](https://github.com/ZekeriyaAY/Arduino-Walkie-Talkie)
 
 
----
+
 ## 📤 Kütüphanelerin IDE'ye Eklenmesi
 
 İndirilen `.zip` dosyalarını aşağıdaki yol ile ekleyin.\
@@ -111,7 +111,7 @@ Arduino IDE > Taslak > library ekle > .ZIP Kitaplığı Ekle...
 ```
 
 
----
+
 ## 📤 Kodların Arduino'ya Yüklenmesi
 Bu aşamaya şuan ihtiyaç yok ancak devre bağlantılarını yaptıktan sonra kodları burada anlatıldığı gibi yüklemeniz için eklendi.
 
@@ -134,7 +134,7 @@ Doğru kartı ve portu seçtiğinizden eminseniz iki Arduino'ya da kodları yük
 > ```
 
 
----
+
 ## 🗺️ Devre Kurulum ve Test Edilmesi
 
 Sıra aldığımız malzemeleri birleştirip test etmeye geldi.
@@ -145,12 +145,13 @@ Sıra aldığımız malzemeleri birleştirip test etmeye geldi.
 
 nRF24L01 modülü ve kullanacağımız adaptör ile nRF24L01 bağlantıları aşağıda bulunuyor.
 
-![nRF24L01 Modülün Pin Çıkışları (Resim 1)](/images/nRF24L01-pinout.png) ![nRF24L01 Modül Adaptörü (Resim 2)](/images/nRF24L01-adaptor.jpeg)
+![nRF24L01 Modülün Pin Çıkışları (Resim 1)](/images/nRF24L01-pinout.png "nRF24L01 Modülün Pin Çıkışları (Resim 1)")
+![nRF24L01 Modül Adaptörü (Resim 2)](/images/nRF24L01-adaptor.jpeg "nRF24L01 Modül Adaptörü (Resim 2)")
 
 Adaptör kullanmadan yapılan bağlantı aşağıda gösteriliyor. Adaptör kullanarak yapılan bağlantıda tek değişiklik `VCC`'yi `3.3V` yerine `5V`'a bağlamanız.
 - Boş olan pin, kullanılmayan `IRQ` pini.
 
-![Modülün Adaptörsüz Bağlantısı (Resim 3)](/images/nRF24L01-adaptor-sema.png)
+![Modülün Adaptörsüz Bağlantısı (Resim 3)](/images/nRF24L01-adaptor-sema.png "Modülün Adaptörsüz Bağlantısı (Resim 3)")
 
 
 Aşağıdaki pin dizilimleri *Nano/Uno* içindir. *Mega* için farklı pinler kullanılıyor. [🔖 **Yardım Aldığım Kaynaklar**](#-yardım-aldığım-kaynaklar)'da o bağlantıları bulabilirsiniz.
@@ -169,7 +170,7 @@ Aşağıdaki pin dizilimleri *Nano/Uno* içindir. *Mega* için farklı pinler ku
 
 ### 🔊 Hoparlör Bağlantısı ve Testi
 
-![Hoparlör Bağlantı Şeması (Resim 4)](/images/hoparlor-sema.png)
+![Hoparlör Bağlantı Şeması (Resim 4)](/images/hoparlor-sema.png "Hoparlör Bağlantı Şeması (Resim 4)")
 
 Hoparlör üzerinde kırmızı kablo(+) D10 pinine , siyah kablo(-) GND pinine bağladım.
 
@@ -179,7 +180,7 @@ Hoparlör üzerinde kırmızı kablo(+) D10 pinine , siyah kablo(-) GND pinine b
 
 ### 🔘 Buton Bağlantısı ve Testi
 
-![Buton Bağlantı Şeması (Resim 5)](/images/buton-sema.png)
+![Buton Bağlantı Şeması (Resim 5)](/images/buton-sema.png "Buton Bağlantı Şeması (Resim 5)")
 
 > `Arduino-Walkie-Talkie-main.zip` dosyasındaki `buton.ino` kodunu Arduino'ya yükleyin.
 
@@ -189,7 +190,7 @@ Kodu yükledikten sonra "**Seri Port Ekranı**" nda butona bastığınızda saya
 
 ### 🎤 Mikrofon Bağlantısı ve Testi
 
-![Mikrofon Bağlantı Şeması (Resim 6)](/images/mik-sema.png)
+![Mikrofon Bağlantı Şeması (Resim 6)](/images/mik-sema.png "Mikrofon Bağlantı Şeması (Resim 6)")
 
 5V'a da bağlayabilirsiniz. Ancak 3.3V da daha temiz ses elde ettiğim için 3.3V kullandım.
 
@@ -201,7 +202,7 @@ Kodu çalıştırdıktan sonra "**Seri Port Ekranı**" nda mikrofona konuştuğu
 
 ### 🗺️ Tüm Bağlantı Şeması
 
-![Tüm Bağlantı Şeması (Resim 7)](/images/son-sema.png)
+![Tüm Bağlantı Şeması (Resim 7)](/images/son-sema.png "Tüm Bağlantı Şeması (Resim 7)")
 
 Resim 7'de devrenin son hali var. Şemaları çizdiğimiz programda nRF24L01 antenli versiyonu veya adaptörü olmadığı için şemada antensiz ve adaptörsüz halini görüyorsunuz. Bağlantılarda herhangi bir farklılık yok.
 
@@ -209,7 +210,7 @@ Resim 7'de devrenin son hali var. Şemaları çizdiğimiz programda nRF24L01 ant
 
 ## 📤 Ana Kodun Arduino'ya Yüklenmesi
 
-İndirilen `Arduino-Walkie-Talkie-main.zip`  dosyasının içindeki `Walkie-Talkie-Kod.ino` kodu iki Arduino'ya [📤 Kodların Arduino'ya Yüklenmesi](#-kodların-arduinoya-yüklenmesi)nde anlatıldığı gibi yükleyin.
+İndirilen `Arduino-Walkie-Talkie-main.zip`  dosyasının içindeki `Walkie-Talkie-Kod.ino` kodu iki Arduino'ya [📤 Kodların Arduino'ya Yüklenmesi](#-kodların-arduinoya-yüklenmesi "📤 Kodların Arduino'ya Yüklenmesi")nde anlatıldığı gibi yükleyin.
 
 Sorunsuz yüklendiyse butona basıp konuşmaya başlayabilirsiniz.
 
@@ -222,23 +223,23 @@ Devremizi breadboard üzerine kurduk, kodları yükleyip çalıştırdık. Sıra
 >Bu aşama zorunlu değildir. İsterseniz breadboard üzerinde kullanabilirsiniz ancak pertinaks üzerinde kablo karmaşası olmadan daha kullanışlı olduğu için bu aşamayı yaptım.
 Ayrıca pertinaks üzerinde sabit devrede mikrofonda gürültü daha çok azaldı. Sanırım jumper kablolar daha az, daha kısa olduğu için oldu.
 
-![Devrenin Önden Görünümü (Resim 8)](/images/perti-on.png)
+![Devrenin Önden Görünümü (Resim 8)](/images/perti-on.png "Devrenin Önden Görünümü (Resim 8)")
 
-![Devrenin Arkadan Antensiz Görünümü (Resim 9)](/images/perti-arka-antensiz.png)
+![Devrenin Arkadan Antensiz Görünümü (Resim 9)](/images/perti-arka-antensiz.png "Devrenin Arkadan Antensiz Görünümü (Resim 9)")
 
-![Devrenin Arkadan Antenli Görünümü (Resim 10)](/images/perti-arka-antenli.png)
+![Devrenin Arkadan Antenli Görünümü (Resim 10)](/images/perti-arka-antenli.png "Devrenin Arkadan Antenli Görünümü (Resim 10)")
 
 >Alıcı-verici modülü sabitlemek için altına sıcak silikon sıktım. Yoksa hareket ettiğinde pinlerde temassızlık oluyor ve telsiz bağlantıları kesiliyordu.
 
-![Devrenin Yandan Görünümü (Resim 11)](/images/perti-yan.jpeg)
+![Devrenin Yandan Görünümü (Resim 11)](/images/perti-yan.jpeg "Devrenin Yandan Görünümü (Resim 11)")
 
 >Devrenin arkasındaki pinlere dokununca devre bozulabiliyor. Bu yüzden arkasına ve önüne patlatılan poşetlerden kesip sıcak silikonla yapıştırdım. Böylece devrelere temas etmemiş oluyoruz. 
 
-![Devrenin Arkadan Paketli Görünümü (Resim 12)](/images/son-arka-tek.png)
+![Devrenin Arkadan Paketli Görünümü (Resim 12)](/images/son-arka-tek.png "Devrenin Arkadan Paketli Görünümü (Resim 12)")
 
-![Telsizlerin Önden Görünümü (Resim 13))](/images/son-on.jpeg)
+![Telsizlerin Önden Görünümü (Resim 13)](/images/son-on.jpeg "Telsizlerin Önden Görünümü (Resim 13)")
 
-![Telsizlerin Arkadan Görünümü (Resim 14)](/images/son-arka.jpeg)
+![Telsizlerin Arkadan Görünümü (Resim 14)](/images/son-arka.jpeg "Telsizlerin Arkadan Görünümü (Resim 14)")
 
 
 >Telsizin testlerini aşağıdaki linkten izleyebilirsiniz.\
@@ -275,5 +276,11 @@ Birkaç tecrübe edindim.
 
 **📎 *Beni Aşağıdan Takip Ederek ve Abone Olarak Destekleyebilirsiniz***
 
-[ZekeriyaAY - Github](https://github.com/ZekeriyaAY) \
+[ZekeriyaAY - Github](https://github.com/ZekeriyaAY "ZekeriyaAY - Github") \
 [LeadScript - Youtube](https://www.youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ)
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
+" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+
+[![Youtube Video](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
