@@ -5,7 +5,7 @@
 > &emsp;Bu projenin videolu anlatımı ve testlerini aşağıdaki videodan izleyebilirsiniz.\
 [▶️ Arduino ile Walkie-Talkie(Telsiz) Yapımı ve Testleri](https://www.youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ) (Video Henüz Yayınlanmadı)
 
-![Telsizin Ön Yüzü](/images/perti-on.png)
+![Telsizin Ön Yüzü](/images/perti-on.png "Telsizin Ön Yüzü")
 
 
 ## 📑 Table Of Contents
@@ -40,7 +40,7 @@ Projede kullandığım malzemeleri, internetten aldığım sitelerden siz de ala
     - Antenli versiyonunu kullandım.
     - İki versiyonun da bağlantıları aynı.
     - Antensiz versiyonu açık alanda ort. 100m, kapalı alanda ort. 10-20m mesafede çalışıyormuş(!)(Söylenene göre...)
-    - Antenli versiyonu ise ort. 10 kat artıyor. (Mesafe testinin videosu [*🔖 Yardım Aldığım Kaynaklar*](#-yardım-aldığım-kaynaklar)'da var)
+    - Antenli versiyonu ise ort. 10 kat artıyor. (Mesafe testinin videosu [*🔖 Yardım Aldığım Kaynaklar*](#-yardım-aldığım-kaynaklar "🔖 **Yardım Aldığım Kaynaklar**")'da var)
     - VCC yi 3.3V'a bağlayın yoksa bozuluyor veya adaptör ile 5V da kullanın. Ben adaptörle 5V da kullandım.
     
 - 2 adet **[nRF24L01 Wireless Modül Adaptörü](ttps://www.direnc.net/8-pin-nrf24l01-wireless-modul-adaptoru)**
@@ -143,7 +143,7 @@ Sıra aldığımız malzemeleri birleştirip test etmeye geldi.
 
 ### 📡nRF24L01 Bağlantısı ve Testi
 
-nRF24L01 modülü ve kullanacağımız adaptör ile nRF24L01 bağlantıları aşağıda bulunuyor.
+nRF24L01 modülü ve kullanacağımız adaptörün pin dizilimini aşağıdaki resimlerden ulaşabilirsiniz.
 
 ![nRF24L01 Modülün Pin Çıkışları (Resim 1)](/images/nRF24L01-pinout.png "nRF24L01 Modülün Pin Çıkışları (Resim 1)")
 ![nRF24L01 Modül Adaptörü (Resim 2)](/images/nRF24L01-adaptor.jpeg "nRF24L01 Modül Adaptörü (Resim 2)")
@@ -154,15 +154,21 @@ Adaptör kullanmadan yapılan bağlantı aşağıda gösteriliyor. Adaptör kull
 ![Modülün Adaptörsüz Bağlantısı (Resim 3)](/images/nRF24L01-adaptor-sema.png "Modülün Adaptörsüz Bağlantısı (Resim 3)")
 
 
-Aşağıdaki pin dizilimleri *Nano/Uno* içindir. *Mega* için farklı pinler kullanılıyor. [🔖 **Yardım Aldığım Kaynaklar**](#-yardım-aldığım-kaynaklar)'da o bağlantıları bulabilirsiniz.
-
-|            |     |        |    |     |     |      |      |
-|------------|-----|--------|----|-----|-----|------|------|
-|**nRF24L01**| GND |   VCC  | CE | CSN | SCK | MOSI | MISO |
-| **Arduino**| GND | 3.3/5V | D7 |  D8 | D13 |  D11 |  D12 |
+Aşağıdaki pin dizilimleri *Nano/Uno* içindir. *Mega* için farklı pinler kullanılıyor. [🔖 **Yardım Aldığım Kaynaklar**](#-yardım-aldığım-kaynaklar "🔖 **Yardım Aldığım Kaynaklar**")'da o bağlantıları bulabilirsiniz.
 
 
-> `Arduino-Walkie-Talkie-main.zip` dosyasındaki `alici.ino` kodunu bir Arduino'ya, `verici.ino` kodunu diğer Arduino'ya yükleyin.
+| **nRF24L01** | **Arduino** |
+|:------------:|:-----------:|
+|      GND     |     GND     |
+|      VCC     |    3.3/5V   |
+|      CE      |      D7     |
+|      CSN     |      D8     |
+|      SCK     |     D13     |
+|     MOSI     |     D11     |
+|     MISO     |     D12     |
+
+
+`Arduino-Walkie-Talkie-main.zip` dosyasındaki `alici.ino` kodunu bir Arduino'ya, `verici.ino` kodunu diğer Arduino'ya yükleyin.
 
 İki kodu da farklı Arduinolara yükledikten sonra alıcı kodunu yüklediğiniz Arduino'nun "**Seri Port Ekranı**" nda "**Hello Ardu**" yazısını görüyorsanız bağlantılar doğrudur demektir.
 
@@ -172,9 +178,9 @@ Aşağıdaki pin dizilimleri *Nano/Uno* içindir. *Mega* için farklı pinler ku
 
 ![Hoparlör Bağlantı Şeması (Resim 4)](/images/hoparlor-sema.png "Hoparlör Bağlantı Şeması (Resim 4)")
 
-Hoparlör üzerinde kırmızı kablo(+) D10 pinine , siyah kablo(-) GND pinine bağladım.
+Hoparlör üzerinde kırmızı kablo(+) D10 pinine, siyah kablo(-) GND pinine bağladım.
 
-> `Arduino-Walkie-Talkie-main.zip` dosyasındaki `hoparlor.ino` kodunu Arduino'ya yükleyip hoparlör bağlantılarını melodi sesleriyle test edebilirsiniz.
+`Arduino-Walkie-Talkie-main.zip` dosyasındaki `hoparlor.ino` kodunu Arduino'ya yükleyip hoparlör bağlantılarını melodi sesleriyle test edebilirsiniz.
 
 
 
@@ -182,7 +188,7 @@ Hoparlör üzerinde kırmızı kablo(+) D10 pinine , siyah kablo(-) GND pinine b
 
 ![Buton Bağlantı Şeması (Resim 5)](/images/buton-sema.png "Buton Bağlantı Şeması (Resim 5)")
 
-> `Arduino-Walkie-Talkie-main.zip` dosyasındaki `buton.ino` kodunu Arduino'ya yükleyin.
+`Arduino-Walkie-Talkie-main.zip` dosyasındaki `buton.ino` kodunu Arduino'ya yükleyin.
 
 Kodu yükledikten sonra "**Seri Port Ekranı**" nda butona bastığınızda sayaç sayıları artıyorsa sıradaki ve son bağlantıya geçebilirsiniz.
 
@@ -194,9 +200,9 @@ Kodu yükledikten sonra "**Seri Port Ekranı**" nda butona bastığınızda saya
 
 5V'a da bağlayabilirsiniz. Ancak 3.3V da daha temiz ses elde ettiğim için 3.3V kullandım.
 
-> `Arduino-Walkie-Talkie-main.zip` dosyasındaki `Mikrofon.ino` kodunu Arduino'ya yükleyin.
+`Arduino-Walkie-Talkie-main.zip` dosyasındaki `mikrofon.ino` kodunu Arduino'ya yükleyin.
 
-Kodu çalıştırdıktan sonra "**Seri Port Ekranı**" nda mikrofona konuştuğunuz zaman Volt değerlerini göreceksiniz. Eğer değişim olmuyorsa bağlantıları kontrol edin.
+Kodu çalıştırdıktan sonra "**Seri Port Ekranı**" nda mikrofona konuştuğunuz zaman Volt değerlerinin değiştiğini göreceksiniz. Eğer değişim olmuyorsa bağlantıları kontrol edin.
 
 
 
@@ -204,13 +210,13 @@ Kodu çalıştırdıktan sonra "**Seri Port Ekranı**" nda mikrofona konuştuğu
 
 ![Tüm Bağlantı Şeması (Resim 7)](/images/son-sema.png "Tüm Bağlantı Şeması (Resim 7)")
 
-Resim 7'de devrenin son hali var. Şemaları çizdiğimiz programda nRF24L01 antenli versiyonu veya adaptörü olmadığı için şemada antensiz ve adaptörsüz halini görüyorsunuz. Bağlantılarda herhangi bir farklılık yok.
+Resim 7'de devrenin son hali var. Şemaları çizdiğimiz programda nRF24L01 antenli versiyonu veya adaptörü olmadığı için şemada antensiz ve adaptörsüz halini görüyorsunuz. Bağlantılarda herhangi bir farklılık yok. Eğer adaptör kullanıcaksanız adaptörün `VCC`'yi `3.3V` yerine `5V`'a bağlayın.
 
 
 
 ## 📤 Ana Kodun Arduino'ya Yüklenmesi
 
-İndirilen `Arduino-Walkie-Talkie-main.zip`  dosyasının içindeki `Walkie-Talkie-Kod.ino` kodu iki Arduino'ya [📤 Kodların Arduino'ya Yüklenmesi](#-kodların-arduinoya-yüklenmesi "📤 Kodların Arduino'ya Yüklenmesi")nde anlatıldığı gibi yükleyin.
+İndirilen `Arduino-Walkie-Talkie-main.zip`  dosyasının içindeki `main.ino` kodu iki Arduino'ya [📤 Kodların Arduino'ya Yüklenmesi](#-kodların-arduinoya-yüklenmesi "📤 Kodların Arduino'ya Yüklenmesi")nde anlatıldığı gibi yükleyin.
 
 Sorunsuz yüklendiyse butona basıp konuşmaya başlayabilirsiniz.
 
@@ -242,7 +248,7 @@ Ayrıca pertinaks üzerinde sabit devrede mikrofonda gürültü daha çok azald�
 ![Telsizlerin Arkadan Görünümü (Resim 14)](/images/son-arka.jpeg "Telsizlerin Arkadan Görünümü (Resim 14)")
 
 
->Telsizin testlerini aşağıdaki linkten izleyebilirsiniz.\
+>Telsizin testlerini aşağıdaki videodan izleyebilirsiniz.\
 [▶️ **Arduino ile Walkie-Talkie(Telsiz) Yapımı**](https://www.youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ)
 
 
@@ -251,12 +257,12 @@ Ayrıca pertinaks üzerinde sabit devrede mikrofonda gürültü daha çok azald�
 
 - nRF24L01 Modülü ile İlgili
     - Arduino Mega kullanıcaklar için bağlantılar bu linklerde bulunuyor.
-    - [hayaletveyap.com/arduino-ile-nrf24l01-kablosuz-rf-modul-kullanimi/](https://hayaletveyap.com/arduino-ile-nrf24l01-kablosuz-rf-modul-kullanimi/)
-    - [lastminuteengineers.com/nrf24l01-arduino-wireless-communication/](https://lastminuteengineers.com/nrf24l01-arduino-wireless-communication/)
+    - [hayaletveyap.com/arduino-ile-nrf24l01-kablosuz-rf-modul-kullanimi](https://hayaletveyap.com/arduino-ile-nrf24l01-kablosuz-rf-modul-kullanimi/)
+    - [lastminuteengineers.com/nrf24l01-arduino-wireless-communication](https://lastminuteengineers.com/nrf24l01-arduino-wireless-communication/)
 
 - [nRF24L01 Antenli ve Antensiz Menzil Testi Videosu](https://www.youtube.com/watch?v=2tfa9i0bsX8&ab_channel=Merakl%C4%B1Maymun)
 
-- [Walkie-Talkie Yapan En Detaylı Kaynak Olabilir (İngilizce)](https://www.instructables.com/id/Wristwatch-Walkie-Talkie/)
+- [Walkie-Talkie Yapan En Detaylı Kaynak Olabilir ama Eksikleri Var(İngilizce)](https://www.instructables.com/id/Wristwatch-Walkie-Talkie/)
 
 - [Walkie-Talkie Yapan Türkçe Kaynak](https://ugrdmr.wordpress.com/2018/07/22/arduino-telsiz-walkie-talkie/)
 
@@ -264,8 +270,7 @@ Ayrıca pertinaks üzerinde sabit devrede mikrofonda gürültü daha çok azald�
 
 ## 🖋️ Sonuç Nasıl Oldu?
 
-Sonuçtan büyük ölçekte memnunum.
-Birkaç tecrübe edindim.
+Sonuçtan büyük ölçekte memnunum. Birkaç tecrübe edindim.
 
 - Pertinaks üzerine lehimlerken Arduino'yu direk lehimledim. Bunu yapmak yerine *dişi pin header* lehimleyip Arduino'yu bu headerlara takmak daha iyi olur. Böylece gerektiğinde Arduino'yu kolayca çıkartılıp yenisi takılabilir veya başka şeylerde kullanılabilir.
 - İlk uzun lehim deneyimim olduğundan dolayımı bilmiyorum ama *daha ince lehim teli*, d*aha ince havya ucu* ve *lehim pastası* kullansam lehim işlemleri daha kolay olabilirdi.
@@ -274,7 +279,7 @@ Birkaç tecrübe edindim.
 
 ---
 
-**📎 *Beni Aşağıdan Takip Ederek ve Abone Olarak Destekleyebilirsiniz***
+**📎 *Beni Aşağıdaki Linklerden Takip Ederek ve Abone Olarak Destekleyebilirsiniz***
 
 [ZekeriyaAY - Github](https://github.com/ZekeriyaAY "ZekeriyaAY - Github") \
 [LeadScript - Youtube](https://www.youtube.com/channel/UCcg8zjG1kt-6sRfb4ajHWXQ)
