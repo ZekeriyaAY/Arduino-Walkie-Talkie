@@ -22,7 +22,7 @@
 - [📤 Ana Kodun Arduino'ya Yüklenmesi](#-ana-kodun-arduinoya-yüklenmesi)
 - [📦 Lehim ile Sabit Devre Kurulumu](#-lehim-ile-sabit-devre-kurulumu)
 - [🔖 Yardım Aldığım Kaynaklar](#-yardım-aldığım-kaynaklar)
-- [🖋️ Sonuç Nasıl Oldu?](%20%23%EF%B8%8Fsonu%C3%A7-nas%C4%B1l-oldu)
+- [🖋️ Sonuç Nasıl Oldu?](#%EF%B8%8F-sonuç-nasıl-oldu)
 
 
 
