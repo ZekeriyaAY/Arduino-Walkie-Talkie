@@ -2,7 +2,7 @@
 #include <nRF24L01.h>
 #include <RF24.h>
 
-RF24 radio(7, 8); //CE VE CSN PİNLERİ
+RF24 radio(7, 8); //CE and CSN PIN
 const byte address[6] = "00001";
 
 void setup(){
