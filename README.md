@@ -1,3 +1,5 @@
+
+
 # &emsp; 📻 Projenin anlatımı [medium@zekeriyaay.com](https://medium.com/@zekeriyaay/arduino-walkie-talkie-10ae6113e58e)'da 📻
 
 🚀 **Bu proje *Eylül 2020*'de yapılıp anlatımı *kişisel blog* sitemden *Medium*'a *Mart 2022*'de taşınmıştır.\
@@ -16,5 +18,7 @@
 
 ## 🙏 Teşekkürler
 **Bu repoya *⭐ yıldız*, *[Medium yazıma](https://medium.com/@zekeriyaay/arduino-walkie-talkie-10ae6113e58e)  💬 yorumunu* bırakıp, eksiklerimi söyleyerek bana destek olabilirsin...**
+
+🤝 [GitHub Sponsors](https://github.com/sponsors/zekeriyaay) üzerinden projeye maddi destek olabilirsiniz.
 
 ![Github Repo Star](/img/github-repo-star.gif)
